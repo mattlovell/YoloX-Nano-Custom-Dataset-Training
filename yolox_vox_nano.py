@@ -21,6 +21,7 @@ from yolox.data import get_yolox_datadir
 class Exp(MyExp):
     def __init__(self):
         super(Exp, self).__init__()
+        self.num_classes = 2 #you may want to change this accordingly!
         self.depth = 0.33
         self.width = 0.25
         self.input_size = (416, 416)
